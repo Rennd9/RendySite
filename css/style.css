@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
   --blue:#2980b9;
@@ -66,7 +66,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .container .profile h3{
-  color:var(--black);
+  color:#d9d9d9;
   font-size: 20px;
 }
 
@@ -109,7 +109,7 @@ html::-webkit-scrollbar-thumb{
 .container .information .about .box-container .box h3{
   font-size: 15px;
   padding:10px 0;
-  color:var(--black);
+  color:#d9d9d9;
 }
 
 .container .information .about .box-container .box h3 span{
@@ -127,11 +127,12 @@ html::-webkit-scrollbar-thumb{
 }
 
 .container .information .services .box-container .box{
-  flex:1 1 17px;
+  flex: 1 1 17px;
   text-align: center;
   border-radius: 5px;
-  padding:20px;
-  background: var(--light-bg);
+  padding: 20px;
+  background: #171e26;
+  box-shadow: 4px 5px 8px 2px #141a20;
 }
 
 .container .information .services .box-container .box img{
@@ -141,7 +142,7 @@ html::-webkit-scrollbar-thumb{
 
 .container .information .services .box-container .box h3{
   font-size: 15px;
-  color:var(--light-color);
+  color:#d9d9d9;
 }
 
 .container .information .skills .box-container{
@@ -272,13 +273,13 @@ html::-webkit-scrollbar-thumb{
 
 .container .information .contact .box-container .box h3{
   font-size: 17px;
-  color:var(--black);
+  color:#d9d9d9;
   padding-bottom: 5px;
 }
 
 .container .information .contact .box-container .box p{
   font-size: 14px;
-  color:var(--light-color);
+  color:#d9d9d9;
   line-height: 2;
 }
 
