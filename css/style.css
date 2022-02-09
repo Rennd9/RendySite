@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-bodyr {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+body {
   background:#19222c
 }
 :root{
@@ -12,7 +12,7 @@ bodyr {
 }
 
 *{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Poppins', sans-serif;
   margin:0; padding:0;
   box-sizing: border-box;
   outline: none; border:none;
