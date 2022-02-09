@@ -85,7 +85,6 @@ html::-webkit-scrollbar-thumb{
 
 .container .information{
   flex:1 1 1000px;
-  background: var(--white);
   padding:20px 30px;
 }
 
