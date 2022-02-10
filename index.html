@@ -31,8 +31,19 @@
 
         </div>
         <div class="buttons">
-		<div class="button">Click Me</div>
-            <a class="yamete btn btn-primary" target="_blank" role="button">Klik aku Dong</a>
+<button id="b3" class="button cycle large bg-cyan fg-white">test
+    <span class="mif-library"></span>
+</button>
+
+<script>
+    $("#b2").on("click", function(){
+        Metro.getPlugin("#b1", "audio-button").play();
+    })
+
+    $("#b3").on("click", function(){
+        Metro.playSound("sound/yamete.mp3");
+    })
+</script>            <a class="yamete btn btn-primary" target="_blank" role="button">Klik aku Dong</a>
         </div>
     </div>
 
@@ -208,23 +219,7 @@
 
     
 </body>
-    
-    <script>
-  $(document).ready(function() {
-    
-  var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
-  var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
 
-  $(".button").mousedown(function() {
-    audio2.load();
-    audio2.play();
-  });
-	
-  $(".button").mouseup(function() {
-    audio.load();
-    audio.play();
-  });
-});</script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
