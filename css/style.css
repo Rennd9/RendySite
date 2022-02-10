@@ -65,7 +65,7 @@ html::-webkit-scrollbar-thumb{
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border:2px solid var(--black);
+  border:5px solid #0d6efd;
   object-fit: cover;
   margin-bottom: 10px;
 }
