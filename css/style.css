@@ -4,6 +4,10 @@
 body {
   background:#19222c
 }
+.boxs{
+  background: #171e26;
+    box-shadow: 4px 5px 8px 2px #141a20;
+}
 :root{
   --blue:#2980b9;
   --black:#333;
