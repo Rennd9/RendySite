@@ -156,29 +156,7 @@
 
         <div class="project">
             <h3 class="title games font">Tools [ Project ]</h3>
-           
-         <div class="row">
-  <div class="col-sm-6">
-    <div class="card boxs bg-dark">
-      <div class="card-body boxs bg-dark">
-        <h5 class="card-title text-white">Calculator Winrate Hero MobileLegends:Bang Bang</h5>
-        <p class="card-text p-white"> Kalkulator  Winrate  Hero MLBB </p>
-        <a type="button" data-bs-toggle="collapse" data-bs-target="#bukawr" aria-expanded="false" aria-controls="bukawr" class="btn btn-primary ">Buka Winrate</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-  
-    <div class="card boxs bg-dark">
-      <div class="card-body boxs bg-dark">
-        <h5 class="card-title text-white">Youtube Video Download</h5>
-        <p class="card-text"> Tanpa Nyasar APK LAIN Bebas Iklan Popup.</p>
-        <a href="#" class="btn btn-primary disabled">Kunjungi</a>
-      </div>
-    </div>
-  </div>
-  <br/> <br/>
-<div class="collapse" id="bukawr">
+            <div class="collapse" id="bukawr">
   <div class="card card-body">
 <form class="mb-3">
 
@@ -308,7 +286,7 @@
     </select>
   </div>
   <div class="col">
-<label class="mb-1" for="idMatch">Pick Hero </label>
+<label class="mb-1" for="idMatch">Total Pertandingan Anda </label>
 <input type="number" placeholder="Contoh: 351" autofocus autocomplete="off" id="tMatch" class="form-control" />  </div>
 </div>
 <br/>
@@ -341,7 +319,7 @@
                 `<div class="alert alert-primary" role="alert">
  hero Kamu <span class="badge bg-primary"><b>${hiro.value}</b></span>  <a class='text-red'> Butuh Kemenagan[Win] </a> <span class="badge bg-danger"><b>${resultNum}</b></span>  tanpa adanya kalah, dan harus winstreak untuk mendapatkan Kemenagan winrate <span class="badge bg-danger"><b>${wrReq.value}%</b></span> 
 </div>`;
-</div>
+
             resultText.innerHTML = text;
         }
         function rumus(tMatch, tWr, wrReq) {
@@ -367,13 +345,35 @@
         function eventListener() {
             hasil.addEventListener("click", res);
         }
-    </script>
+    </script>   </div>
+    </div>
+	<br/>
+         <div class="row">
+  <div class="col-sm-6">
+    <div class="card boxs bg-dark">
+      <div class="card-body boxs bg-dark">
+        <h5 class="card-title text-white">Calculator Winrate Hero MobileLegends:Bang Bang</h5>
+        <p class="card-text p-white"> Kalkulator  Winrate  Hero MLBB </p>
+        <a type="button" data-bs-toggle="collapse" data-bs-target="#bukawr" aria-expanded="false" aria-controls="bukawr" class="btn btn-primary ">Buka Winrate</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+ 
+    <div class="card boxs bg-dark">
+      <div class="card-body boxs bg-dark">
+        <h5 class="card-title text-white">Youtube Video Download</h5>
+        <p class="card-text"> Tanpa Nyasar APK LAIN Bebas Iklan Popup.</p>
+        <a href="#" class="btn btn-primary disabled">Kunjungi</a>
+      </div>
+    </div>
+  </div>
   </div>
 </div>
 
 </div>
            
-       <nav>
+    
   
          
   
