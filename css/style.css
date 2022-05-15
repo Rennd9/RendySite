@@ -124,6 +124,10 @@ html::-webkit-scrollbar-thumb{
   color:var(--light-color);
 }
 
+.container .information .services{
+  padding:20px 0;
+}
+
 .container .information .services .box-container{
   display: flex;
   flex-wrap: wrap;
@@ -291,7 +295,6 @@ html::-webkit-scrollbar-thumb{
   
   .container{
     flex-flow: column;
-    padding:20px;
     justify-content: center;
   }
 
