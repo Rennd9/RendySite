@@ -305,7 +305,6 @@ html::-webkit-scrollbar-thumb{
 
   .container .information{
     border-radius: 5px;
-    box-shadow: var(--box-shadow);
     padding:20px;
   }
 
