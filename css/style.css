@@ -124,10 +124,6 @@ html::-webkit-scrollbar-thumb{
   color:var(--light-color);
 }
 
-.container .information .services{
-  padding:20px 0;
-}
-
 .container .information .services .box-container{
   display: flex;
   flex-wrap: wrap;
