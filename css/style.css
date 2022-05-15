@@ -8,6 +8,9 @@ body {
   background: #171e26;
     box-shadow: 4px 5px 8px 2px #141a20;
 }
+.bulet {
+    border-radius: 2.25rem!important;
+}
 :root{
   --blue:#2980b9;
   --black:#333;
@@ -188,6 +191,17 @@ html::-webkit-scrollbar-thumb{
   display: block;
   border-radius: 50px;
 }
+
+.modal-header  {
+    border-bottom: 1px solid #0073f7;
+
+}
+
+modal-footer  {
+    border-bottom: 1px solid #0073f7;
+
+}
+
 
 .container .information .skills .box-container .box:first-child .progress:nth-child(1) .bar span{
   width: 95%;
