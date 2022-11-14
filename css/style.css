@@ -343,3 +343,25 @@ modal-footer  {
   }
 
 }
+@media (min-width: 200px) and (max-width: 1200px) {
+  .om {
+    display: none;
+    visibility: hidden;
+  }
+  .container .information {
+    flex: 1 1 500px;
+    padding: 20px 30px;
+}
+}
+@media (max-width: 576px) {
+  .col-sm-4 {
+    flex: 0 0 auto;
+    /* width: 33.33333333%; */
+}
+}
+
+@media (min-width: 1200px) {
+  .ob{
+    display: none;
+  }
+}
