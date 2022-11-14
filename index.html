@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <title> RendySite</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="BIODATA Profile Rendy">
     <meta name="keywords" content="konten kegabutan">
-    <meta name="author" content="Rendy Permana">
+    <meta name="theme-color" content="#000">
+    <meta name="author" content="Rendy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -18,21 +19,33 @@
     
 <body>
 
-   
+
     
 <div class="container">
 
     <div class="profile">
-        <img src="images/pic.png" alt="">
+        <img src="images/pic.png" alt=""/>
+        <span style='margin-left: 15px; background: #00316e;' class="position-absolute start-50 badge rounded-pill"> 
+          
+          <div class='fa fa-volume-up'></div>
+          <div class="form-switch">
+            <input class="form-switch form-check-input" type="checkbox" role="switch" autocomplete="off" onclick="toggleSound()" >
+          </div></span>
+
         <h3 class='games font'>rendy depariie</h3>
-        <p> - Higher 58/179 KG\CM </p>
+        <p>- Berat Tubuh &nbsp;<span class="badge bg-danger">58KG</span>
+          <br/>
+          - Ukuran Tinggi &nbsp;<span class="badge bg-warning">179CM</span>
+          <br/>
+          - Badan Usia &nbsp;<span class="badge bg-primary">19th</span>
+        </p>
       <div class="share bagicok">
             
             <a class="btn  bulat btn-success" href="https://api.whatsapp.com/send?phone=6282387712300" target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
             <a class="btn  bulat btn-primary" href="https://www.facebook.com/depariie.kun.588/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
-           <a class="btn  bulat btn-warning" href="https://saweria.co/rendyngemis" target="_blank" role="button"><i class="fas fa-donate"></i></a>
-           <a class="btn  bulat btn-secondary" href="https://github.com/renz12/RendySite" target="_blank" role="button"><i class="fab fa-github"> - SOURCE</i></a>
- 
+           <a class="btn  bulat btn-secondary" href="https://github.com/renz12/RendySite" target="_blank" role="button"><i class="fab fa-github"></i></a>
+           <a class="btn  bulat btn-danger" href="https://saweria.co/rendyngemis" target="_blank" role="button">Pencet Bang</a>
+
         </div>
       
     </div>
@@ -40,389 +53,206 @@
     <div class="information">
 
         <div class="about">
-            <h3 class="title games font">bionya</h3>
+            <h3 class="fs-1 title games font">informasi menu rendy</h3>
+          
+            <ul class="om nav nav-tabs" id="myTab" role="tablist">
            
-          <div class="alert alert-primary" role="alert">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="isengan-tab" data-bs-toggle="tab" data-bs-target="#isengan-tab-pane" type="button" role="tab" aria-controls="isengan-tab-pane" aria-selected="false">Isengan</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+              </li>
+             <li class="nav-item" role="presentation">
+                <button class="nav-link games" data-toggle="modal" data-target="#versiTema"> .LOG </button>
+              </li>
+          
+            </ul>
+            <div class="mt-3 tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="alert alert-primary" role="alert">
                 <h2 style='color: #ffffff;text-shadow: 0px 9px 8px #94b5e9;'><b>hello bro,</b></h2> salam kenal <img src= 'https://emoji.discord.st/emojis/e9d49fe4-cbcb-4409-9887-cc7207f018e7.gif'"  width="32px" height="32px"/>&nbsp;Salam Kenal ya Manteman.  Ini Bio dan juga saya Bingung Isi Apa Yaudah Ini Aja deh Hehe. 
               </div>
-           
-           
-         
-        </div>
-<br/>
-        <div class="services">
-            <h3 class="title games font">bisa dibilang hobby sih</h3>
-            <div class="box-container">
-                <div class="box">
-                    <img src="images/icon-1.png" alt="">
-                    <h3>main game  </h3>
-
-                </div>
-              <div class="collapse" id="collapseExample">
-  <div class="card-body bg-dark">
-   
-
-      
-  </div>
-</div>
-            
-                <div class="box">
-                   
-                    <h3 class='font games text-center h2'>rebahan atau turu sabilah hehe</h3>
-                </div>
-                <div class="box">
-                    <img src="images/icon-4.png" alt="">
-                    <h3>nonton film anime/dll</h3>
+              <div class="services">
+                <h3 class="title games font">bisa dibilang hobby sih</h3>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="images/icon-1.png" alt="">
+                        <h3>main game  </h3>
+                    </div>
+                    <div class="box">
+                       
+                        <h3 class='font games text-center h2'>rebahan atau turu sabilah hehe</h3>
+                    </div>
+                    <div class="box">
+                        <img src="images/icon-4.png" alt="">
+                        <h3>nonton film anime/dll</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-      
-<br/>
-        <div class="contact">
-            <h3 class="title games font">infoku </h3>
-            <div class="box-container">
-                <div class="box">
-                    <i class="fas fa-map"></i>
-                    <div class="info">
-                        <h3>lokasi address</h3>
-                        <p>indonesia, pekanbaru </p>
-                    </div>
+            <div class="about galery">
+              <h3 class="title games font">gallery</h3>
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
                 </div>
-                <div class="box">
-                    <i class="fas fa-phone"></i>
-                    <div class="info">
-                        <h3>nomor</h3>
-                        <p>0823 8771 2300 - wa/nomorhp</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <i class="fas fa-envelope"></i>
-                    <div class="info">
-                        <h3>email</h3>
-                        <p>rendiword01@gmail.com
-                        </p>
-                    </div>
-                </div>
-                          <br/>
-      <div class="about galery">
-                                <h3 class="title games font">gallery</h3>
-         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img style=' width: 100%;height: auto;' class="d-block w-100" src="/galery/aes.jpeg/"/>
-                                          <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/aes.jpeg" class="d-block w-100" alt="tour guide image" style="height: 400px">
+                    <div class="carousel-caption">
+                      <h5>Pantai Aesthetic</h5>
+                      <p class="card-text bg-dark">Lokasi: Pantai Aceh,Lapuuk</p>
 
-                    <h5>Pantai Aesthetic</h5>
-                    
-                     <div class="card-body">
-    <p class="card-text bg-dark">Lokasi: Pantai Aceh,Lapuuk</p>
-  </div>
-  </div>
-</div>
-  <div class="carousel-item">
-      <img style=' width: 100%;height: auto;' class="d-block w-100" src="/galery/aes1.jpeg/"/>
-  <div class="carousel-caption d-none d-md-block">
-    <h5>Pantai Aesthetic Edited</h5>
-                    
-                     <div class="card-body">
-    <p class="card-text bg-dark">Lokasi: Pantai Aceh,Lapuuk</p>
-  </div>
-  </div>
-</div>
-                    <div class="carousel-item">
-  <img style=' width: 100%;height: auto;' src="/galery/1079546.png">
-</div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/aes1.jpeg" class="d-block w-100" alt="tour guide image 2" style="height: 400px">
+                    <div class="carousel-caption">
+                      <h5>Pantai Aesthetic Edited</h5>
+                      <p class="card-text bg-dark">Lokasi: Pantai Aceh,Lapuuk</p>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/1079546.png" class="d-block w-100" alt="tour guide image 3" style="height: 400px">
+                    <div class="carousel-caption">
+                     
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+              <div class="tab-pane fade" id="isengan-tab-pane" role="tabpanel" aria-labelledby="isengan-tab" tabindex="0">
                 
-            </div>
-                   <br/>
+                <div class="row text-center align-items-center mt-4">
+             
+                <div class="row text-dark mt-4">
+                  <div class="col-sm-6 g-6">
+                    <div class="card bg-dark" >
+                      <div class="card-body boxs bg-dark">
+                        <h5 class="text-white card-title text-center">MLBB Winrate Calculate</h5>
+                        <p class="card-text">Aturan ingin menang dan kalah agar bisa di lampauin pertandingan yang diinginkan winrate kamu</p>
+                        <a href="/calculate" class="btn btn-secondary d-block">Calculate Sekarang</a>
+                        
+                      </div>
+                      <span style=' z-index:999;'class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary text-dark">
+                        ⚙️
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 g-4">
+                    <div class="card bg-dark" >
+                      <div class="card-body boxs bg-dark">
+                        <h5 class="text-white card-title text-center">Kamu Nanya Click</h5>
+                        <p class="card-text">Kamu Nanya Bertanya Tanya? </p>
+                        <a href="/kamu-nanya" class="btn btn-secondary d-block">NANYA CLICK</a>
+                        
+                      </div>
+                      <span style=' z-index:999;'class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary text-dark">
+                        <text class="games text-white">Nanya?</text>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 g-4">
+                    <div class="card bg-dark">
+                      <div class="card-body boxs bg-dark">
+                        <h5 class="text-white card-title text-center">Fiture Ini Akan Ada Jika Saya Gabut  <img src='/emo/heha.gif'/ width="40px" height="40px"></h5>
+                       
+                      </div>
+                     
+                    </div>
+                  </div>
+               
+                </div>
+              </div>
 
-
-
-        <div class="project">
-            <h3 class="title games font">Tools [ Project ]</h3>
-            <div class="collapse" id="bukawr">
-  <div class="card card-body">
-<form class="mb-3">
-
-<div class="row g-3">
-  <div class="col">
-<label class="mb-1" for="hiro">Hero Favorite Kamu</label>
-    <select class="form-select" id="hiro">
-      <option disabled selected>Pick Hero Kamu </option>
-      <option value="Aamon">Aamon</option>
-      <option value="Akai">Akai</option>
-      <option value="Aldous">Aldous</option>
-	    <option value="Alice">Alice</option>
-      <option value="Alpha">Alpha</option>
-      <option value="Angela">Angela</option>
-	    <option value="Argus">Argus</option>
-      <option value="Alucard">Alucard</option>
-      <option value="Aurora">Aurora</option>
-	    <option value="Aulus">Aulus</option>
-      <option value="Atlas">Atlas</option>
-	 <option value="Badang">Badang </option>
-      <option value="Balmond">Balmond</option>
-      <option value="Bane">Bane</option>
-	    <option value="Barats">Barats</option>
-      <option value="Baxia">Baxia</option>
-      <option value="Beatrix">Beatrix</option>
-	    <option value="Belerick">Belerick</option>
-      <option value="Benedetta">Benedetta</option>
-      <option value="Brody">Brody</option>
-	    <option value="Bruno">Bruno</option>
-	   <option value="Carmilla">Carmilla </option>
-      <option value="Cecilion">Cecilion</option>
-      <option value="Chang’e">Chang’e</option>
-	    <option value="Chou">Chou</option>
-      <option value="Claude">Claude</option>
-      <option value="Clint">Clint</option>
-	    <option value="Cyclops">Cyclops</option>
-		 <option value="Diggie">Diggie</option>
-      <option value="Dyrroth">Dyrroth</option>
-	   <option value="Esmeralda">Esmeralda </option>
-      <option value="Estes">Estes</option>
-	    <option value="Eudora">Eudora</option>
-      <option value="Fanny">Fanny</option>
-	    <option value="Faramis">Faramis</option>
-      <option value="Floryn">Floryn</option>
-      <option value="Franco">Franco</option>
-	    <option value="Freya">Freya</option>
-	   <option value="Gatotkaca">Gatotkaca </option>
-      <option value="Gloo">Gloo</option>
-      <option value="Gord">Gord</option>
-	    <option value="Granger">Granger</option>
-      <option value="Grock">Grock</option>
-      <option value="Guinevere">Guinevere</option>
-	    <option value="Gusion">Gusion</option>
-	   <option value="Hanabi">Hanabi </option>
-      <option value="Hanzo">Hanzo</option>
-      <option value="Harith">Harith</option>
-	    <option value="Harley">Harley</option>
-      <option value="Hayabusa">Hayabusa</option>
-      <option value="Helcurt">Helcurt</option>
-	    <option value="Hilda">Hilda</option>
-      <option value="Hylos">Hylos</option>
-	  <option value="Irithel">Irithel </option>
-      <option value="Jawhead">Jawhead</option>
-      <option value="Johnson">Johnson</option>
-	  <option value="Kadita">Kadita </option>
-      <option value="Kagura">Kagura</option>
-      <option value="Kaja">Kaja</option>
-	  <option value="Karina">Karina</option>
-      <option value="Karrie">Karrie</option>
-      <option value="Khaleed">Khaleed</option>
-	  <option value="Khufra">Khufra</option>
-      <option value="Kimmy">Kimmy</option>
-	  <option value="Lancelot">Lancelot </option>
-      <option value="Lapu-lapu">Lapu-lapu</option>
-      <option value="Aldous">Harith</option>
-	  <option value="Layla">Layla</option>
-      <option value="Leomord">Leomord</option>
-      <option value="Lesley">Lesley</option>
-	  <option value="Ling">Ling</option>
-      <option value="Lolita">Lolita</option>
-      <option value="Luo Yi">Luo Yi</option>
-	  <option value="Lunox">Lunox</option>	    
-	  <option value="Lylia">Lylia</option>
-
-		
-<option value="Aamon">Martis </option>
-<option value="Masha">Masha</option><option value="Melissa">Melissa</option>
-<option value="Minotour">Minotour</option><option value="Minsitthar">Minsitthar</option>
-      <option value="Miya">Miya</option>
-	    <option value="Moskov">Moskov</option>
-      <option value="Mathilda">Mathilda</option>
-	  <option value="Nana">Nana </option>
-      <option value="Natalia">Natalia</option>
-      <option value="Natan">Natan</option>
-	  <option value="Nana">Odette </option>
-	  <option value="Paquito">Paquito </option>
-      <option value="Pharsa">Pharsa</option>
-      <option value="Phoveus">Phoveus</option>
-	    <option value="Phylax">Phylax Edith  </option>
-      <option value="Popol & Kupa">Popol & Kupa</option>
-	  <option value="Rafaela">Rafaela </option>
-      <option value="Roger">Roger</option>
-      <option value="Ruby">Ruby</option>
-	    <option value="Saber">Saber</option>
-      <option value="Selena">Selena</option>
-      <option value="Silvanna">Silvanna</option>
-	    <option value="Sun">Sun</option>
-      <option value="Terizla">Terizla</option>
-      <option value="Thamuz">Thamuz</option>
-	    <option value="Tigreal">Tigreal</option>
-		<option value="Uranus">Uranus </option>
-      <option value="Vale">Vale</option>
-      <option value="Valentina">Valentina</option>
-	    <option value="Valir">Valir</option>
-      <option value="Vexana">Vexana</option>
-      <option value="Wanwan">Wanwan</option>
-	    <option value="Xavier">Xavier</option>
-      <option value="X-Borg">X-Borg</option>
-      <option value="Aurora">Yi Sun-Shin</option>
-	    <option value="Yin">Yin</option>
-		<option value="Yu Zhong">Yu Zhong</option>
-	    <option value="Yve">Yve</option>
-	    <option value="Zhask">Zhask</option>
-	    <option value="Zilong">Zilong</option>
-			    <option disabled value="?">?</option>
-
-    </select>
-  </div>
-  <div class="col">
-<label class="mb-1" for="idMatch">Total Pertandingan Hero </label>
-<input type="number" placeholder="Contoh: 100" autofocus autocomplete="off" id="tMatch" class="form-control" />  </div>
-</div>
-<br/>
-<div class="mb-3">
-<label class="mb-1" for="tWr">Total Win Rate hero </label>
-<input type="number" placeholder="Contoh: 55.8" step="any" autocomplete="off" id="tWr" class="form-control" />
-</div>
-
-<div class="mb-3">
-<label class="mb-1" for="wrReq">Win Rate hero yang kamu mau</label>
-<input type="number" placeholder="Contoh: 80%" step="any" autocomplete="off" id="wrReq" class="form-control" />
-</div>
-
-<button class="btn btn-primary d-block w-100" type="button" id="hasil">Hasil</button>
-</form>
-<span id="resultText" class="text-center d-block"> </span>
-<script>
-        // Variables
-        const tMatch = document.querySelector("#tMatch");
-        const tWr = document.querySelector("#tWr");
-        const wrReq = document.querySelector("#wrReq");
-        const hiro = document.querySelector("#hiro");
-        const hasil = document.querySelector("#hasil");
-        const resultText = document.querySelector("#resultText");
-
-        // Functions
-        function res() {
-            const resultNum = rumus(tMatch.value, tWr.value, wrReq.value);
-            const text =
-                `<div class="alert alert-primary" role="alert">
- hero Kamu <span class="badge bg-primary"><b>${hiro.value}</b></span>  <a class='text-red'> Butuh Kemenagan[Win] </a> <span class="badge bg-danger"><b>${resultNum}</b></span>  tanpa adanya kalah, dan harus winstreak untuk mendapatkan Kemenagan winrate <span class="badge bg-danger"><b>${wrReq.value}%</b></span> 
-</div>`;
-
-            resultText.innerHTML = text;
-        }
-        function rumus(tMatch, tWr, wrReq) {
-            let tWin = tMatch * (tWr / 100);
-            let tLose = tMatch - tWin;
-            let sisaWr = 100 - wrReq;
-            let wrResult = 100 / sisaWr;
-            let seratusPersen = tLose * wrResult;
-            let final = seratusPersen - tMatch;
-            return Math.round(final);
-        }
-
-        // Main
-        window.addEventListener("load", init);
-
-        function init() {
-            load();
-            eventListener();
-        }
-
-        function load() {}
-
-        function eventListener() {
-            hasil.addEventListener("click", res);
-        }
-    </script>   </div>
-    </div>
-	<br/>
-         <div class="row">
-  <div class="col-sm-6">
-    <div class="card boxs bg-dark">
-      <div class="card-body boxs bg-dark">
-        <h5 class="card-title text-white">Calculator Winrate Hero MobileLegends:Bang Bang</h5>
-        <p class="card-text p-white"> Kalkulator  Winrate  Hero MLBB </p>
-        <a type="button" data-bs-toggle="collapse" data-bs-target="#bukawr" aria-expanded="false" aria-controls="bukawr" class="btn btn-primary ">Buka Winrate</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
- 
-    <div class="card boxs bg-dark">
-      <div class="card-body boxs bg-dark">
-        <h5 class="card-title text-white">Youtube Video Download</h5>
-        <p class="card-text"> Tanpa Nyasar APK LAIN Bebas Iklan Popup.</p>
-        <a href="#" class="btn btn-primary disabled">Kunjungi</a>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-
-</div>
-           
-    
-  
-         
-  
-    </div>
-           </div>     
-</div>
+              </div>
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">   <div class="contact">
+               
+               
+               <br/> 
+               <h3 class="title games font">infoku </h3>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-map"></i>
+                        <div class="info">
+                            <h3>lokasi address</h3>
+                            <p>indonesia, pekanbaru </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-phone"></i>
+                        <div class="info">
+                            <h3>nomor</h3>
+                            <p>0823 8771 2300 - wa/nomorhp</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <h3>email</h3>
+                            <p>rendiword01@gmail.com
+                            </p>
+                        </div>
+                    </div></div>
+            </div>       
         </div>
+</div>
+</div>
+</div>       
+</div>
+</div>
+</div>
+</div>  
+<footer class="ob">
+  <nav style='box-shadow: 4px 5px 11px 12px #141a20;' class="navbar navbar-dark fixed-bottom bg-dark">
+    <div class="container-fluid">
+      <ul style='    border-bottom: none;'  class="nav nav-tabs" id="myTab" role="tablist">
+        <li role="presentation">
+          <button class="btn btn-outline-primary ms-2 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Beranda</button>
+        </li>
+        <li role="presentation">
+          <button class="btn btn-outline-success ms-2" id="isengan-tab" data-bs-toggle="tab" data-bs-target="#isengan-tab-pane" type="button" role="tab" aria-controls="isengan-tab-pane" aria-selected="false">Isengan</button>
+        </li>
+        <li role="presentation">
+          <button class="btn btn-outline-primary ms-2" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+        </li>
+        <li role="presentation">
+          <a class="btn btn-btn-link ms-2 text-white" data-toggle="modal" data-target="#versiTema"> .LOG </a>
+        </li>
+      </ul>
+
+
+      </div>
+  
+  </nav>
+
+                    </footer>
+               </div>
 
     </div></div>
         </div>
-                   
-<footer>
-<nav class="navbar navbar-dark fixed-bottom bg-dark">
- <button style='margin-left: 15px;' type="button" data-toggle="modal" data-target="#versiTema" class="btn btn-primary position-relative">
-  Perubahan Tema
-  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
-   0.6
-    <span class="visually-hidden">unread messages</span>
-  </span>
-                    
-
-</button>   
-                    <a role="button" style='margin-right: 10px;' href='/' class="btn btn-secondary">↻</a>  
-                    
-<ul class="nav justify-content-end">
-
- <a color='white' class="nav-link disabled">
-  Copyright, Rendy2022
-  </a>
-                    
-</ul>   
-                 
-</nav>
-                    </footer>
+            
 </body>
-<div class="modal fade" id="scanmd" tabindex="-1" role="dialog" aria-labelledby="judulTengah" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
- 
-        <img src="/images/trakteer-qrcode.jpeg/" alt="trakteer-qrcode"/>
-        <button class='bulet btn btn-success' type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">Tutup &times;</span>
-        </button>
-
-   
-	
-    </div>
-	   
-  </div>
-  
-</div>
-
 <div class="modal fade" id="versiTema" tabindex="-1" role="dialog" aria-labelledby="judulTengah" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content boxs bg-dark">
@@ -438,13 +268,13 @@
  
 
   <details open="">
-    <summary>Version 0.6 </summary>
+    <summary>Version 0.7 </summary>
     <p>
       <li>penambahan profile <span class="badge text-red">0.1</span></li>
        <li>penambahan information <span class="badge text-red">0.2</span></li>
        <li>penambahan hobby <span class="badge text-red">0.3</span></li>
 	    <li>penambahan galery <span class="badge text-red">0.4</span></li>
-		 <li>penambahan project <span class="badge text-red">0.5</span> <span class="badge rounded-pill bg-success">Baru!</span> </li>
+		 <li>penambahan project <span class="badge text-red">0.5</span> </li>
   </p>
   </details>
   
@@ -452,6 +282,7 @@
     <summary> Release! </summary>
     <p>
       <li> Tools project Kalkulator MLBB <span class="badge text-red">0.6</span></li>
+      <li> Kamu Nanya Click <span class="badge text-red">0.7</span> <span class="badge rounded-pill bg-success">Baru!</span></li>
   </p>
   </details>
 </div>
@@ -460,13 +291,26 @@
 
       </div>
 	
-<p class="badge text-underline">web ini masih proses dalam tahap pengembangan.</p></
+<p class="badge text-underline">Frame: Boostrap4 Edited Dark Mode 1/2 <br/> .Edit - [ Form Control , Card/Cardbody , bg white>dark , <br/>select control ]</p>
 
     </div>
 	
   </div>
-  
-</div>
+<audio id="player" src="/sound/zeddxvalorant.mp3"></audio> 
+<script>
+  function toggleSound() {
+     var audioElem = document.getElementById('player');
+     if (audioElem.paused) {
+        audioElem.className = "fa fa-volume-up";
+        audioElem.play();
+     } else {
+        audioElem.className = "fa fa-pause";
+        audioElem.pause();
+     }
+  }
+</script>
+
+
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
