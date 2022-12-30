@@ -44,156 +44,60 @@
       <span href='/' class="position-absolute top-0 start-20 translate-middle">
         <a href='/' style='margin-left: 100px;' type="button" class="btn btn-danger">🔙 Beranda</a>
       </span>
-      <span class="position-absolute top-0 start-100 translate-middle">
-        <a  type="button" data-toggle="modal" data-target="#canges_calculate" class="btn btn-success">V.2</a>
-      </span>
-      <form class="mt-2">
+      <form class="p-3 row g-3">
+        <div class="col-md-6">
+          <label for="idMatch" class="text-white form-label">Nama Hero</label>
+          <input type="text" placeholder="Contoh: Layla" autofocus autocomplete="off" id="hiro" class="form-control" />   
+                </div>
+        <div class="col-md-6">
+          <label for="idMatch" class="text-white form-label">Total Pertandingan Hero</label>
+          <input type="number" placeholder="Contoh: 100" autofocus autocomplete="off" id="tMatch" class="form-control" />   
+        </div>
+        <div class="col-12">
+          <label for="tWr" class="text-white form-label">Total Win Rate hero</label>
+          <div class="input-group">
+            <div style='border: 1px solid #000000; background: black' class="input-group-text text-white">%</div>
+          <input type="number" placeholder="Contoh: 55.8%" step="any" autocomplete="off" id="tWr" class="form-control" />
+        </div> </div>
+        <div class="col-12">
+          <label for="wrReq" class="text-white form-label">Winrate Yang Diinginkan Hero </label>
+          <div class="input-group">
+            <div style='border: 1px solid #000000; background: black' class="input-group-text text-white">%</div>
+          <input type="number" placeholder="Contoh: 80%" step="any" autocomplete="off" id="wrReq" class="form-control" />
+        </div>  </div>
+     
+        
+        <div class="col-12">
+          <br/> 
+          <button class="btn btn-primary d-block w-100" type="button"  data-toggle="modal" data-target="#canges_calculate" id="hasil">Hasil</button>
+          <br/>
+                 </div>
+        
+      
+      </form>
+      <div class="modal fade" id="canges_calculate" tabindex="-1" role="dialog" aria-labelledby="judulTengah" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content boxs bg-dark">
+            <div class="modal-header">
+              <h5 class="modal-title text-white" id="judulTengah">Hasilnya </h5>
+              <button class='bulet btn btn-success' type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-white">
+             <ul class='text-white' >
+        <div class="bd-example">
+       
+      
+              <p id="resultText" class="font-monospace d-block"> </p>
 
-        <div class="row g-4">
-          <div class="col">
-        <label class="mb-2 text-white" for="hiro">Hero Favorite Kamu</label>
-            <select class="form-control text-white form-select" id="hiro">
-              <option disabled selected>Pick Hero Kamu </option>
-              <option value="Aamon">Aamon</option>
-              <option value="Akai">Akai</option>
-              <option value="Aldous">Aldous</option>
-              <option value="Alice">Alice</option>
-              <option value="Alpha">Alpha</option>
-              <option value="Angela">Angela</option>
-              <option value="Argus">Argus</option>
-              <option value="Alucard">Alucard</option>
-              <option value="Aurora">Aurora</option>
-              <option value="Aulus">Aulus</option>
-              <option value="Atlas">Atlas</option>
-           <option value="Badang">Badang </option>
-              <option value="Balmond">Balmond</option>
-              <option value="Bane">Bane</option>
-              <option value="Barats">Barats</option>
-              <option value="Baxia">Baxia</option>
-              <option value="Beatrix">Beatrix</option>
-              <option value="Belerick">Belerick</option>
-              <option value="Benedetta">Benedetta</option>
-              <option value="Brody">Brody</option>
-              <option value="Bruno">Bruno</option>
-             <option value="Carmilla">Carmilla </option>
-              <option value="Cecilion">Cecilion</option>
-              <option value="Chang’e">Chang’e</option>
-              <option value="Chou">Chou</option>
-              <option value="Claude">Claude</option>
-              <option value="Clint">Clint</option>
-              <option value="Cyclops">Cyclops</option>
-             <option value="Diggie">Diggie</option>
-              <option value="Dyrroth">Dyrroth</option>
-             <option value="Esmeralda">Esmeralda </option>
-              <option value="Estes">Estes</option>
-              <option value="Eudora">Eudora</option>
-              <option value="Fanny">Fanny</option>
-              <option value="Faramis">Faramis</option>
-              <option value="Floryn">Floryn</option>
-              <option value="Franco">Franco</option>
-              <option value="Freya">Freya</option>
-             <option value="Gatotkaca">Gatotkaca </option>
-              <option value="Gloo">Gloo</option>
-              <option value="Gord">Gord</option>
-              <option value="Granger">Granger</option>
-              <option value="Grock">Grock</option>
-              <option value="Guinevere">Guinevere</option>
-              <option value="Gusion">Gusion</option>
-             <option value="Hanabi">Hanabi </option>
-              <option value="Hanzo">Hanzo</option>
-              <option value="Harith">Harith</option>
-              <option value="Harley">Harley</option>
-              <option value="Hayabusa">Hayabusa</option>
-              <option value="Helcurt">Helcurt</option>
-              <option value="Hilda">Hilda</option>
-              <option value="Hylos">Hylos</option>
-            <option value="Irithel">Irithel </option>
-              <option value="Jawhead">Jawhead</option>
-              <option value="Johnson">Johnson</option>
-              <option value="Julian">Julian</option>
-              <option value="Joy">Joy</option>
-            <option value="Kadita">Kadita </option>
-              <option value="Kagura">Kagura</option>
-              <option value="Kaja">Kaja</option>
-            <option value="Karina">Karina</option>
-              <option value="Karrie">Karrie</option>
-              <option value="Khaleed">Khaleed</option>
-            <option value="Khufra">Khufra</option>
-              <option value="Kimmy">Kimmy</option>
-            <option value="Lancelot">Lancelot </option>
-              <option value="Lapu-lapu">Lapu-lapu</option>
-              <option value="Aldous">Harith</option>
-            <option value="Layla">Layla</option>
-              <option value="Leomord">Leomord</option>
-              <option value="Lesley">Lesley</option>
-            <option value="Ling">Ling</option>
-              <option value="Lolita">Lolita</option>
-              <option value="Luo Yi">Luo Yi</option>
-            <option value="Lunox">Lunox</option>	    
-            <option value="Lylia">Lylia</option>    
-        <option value="Aamon">Martis </option>
-        <option value="Masha">Masha</option><option value="Melissa">Melissa</option>
-        <option value="Minotour">Minotour</option><option value="Minsitthar">Minsitthar</option>
-              <option value="Miya">Miya</option>
-              <option value="Moskov">Moskov</option>
-              <option value="Mathilda">Mathilda</option>
-            <option value="Nana">Nana </option>
-              <option value="Natalia">Natalia</option>
-              <option value="Natan">Natan</option>
-            <option value="Nana">Odette </option>
-            <option value="Paquito">Paquito </option>
-              <option value="Pharsa">Pharsa</option>
-              <option value="Phoveus">Phoveus</option>
-              <option value="Phylax">Phylax Edith  </option>
-              <option value="Popol & Kupa">Popol & Kupa</option>
-            <option value="Rafaela">Rafaela </option>
-              <option value="Roger">Roger</option>
-              <option value="Ruby">Ruby</option>
-              <option value="Saber">Saber</option>
-              <option value="Selena">Selena</option>
-              <option value="Silvanna">Silvanna</option>
-              <option value="Sun">Sun</option>
-              <option value="Terizla">Terizla</option>
-              <option value="Thamuz">Thamuz</option>
-              <option value="Tigreal">Tigreal</option>
-            <option value="Uranus">Uranus </option>
-              <option value="Vale">Vale</option>
-              <option value="Valentina">Valentina</option>
-              <option value="Valir">Valir</option>
-              <option value="Vexana">Vexana</option>
-              <option value="Wanwan">Wanwan</option>
-              <option value="Xavier">Xavier</option>
-              <option value="X-Borg">X-Borg</option>
-              <option value="Aurora">Yi Sun-Shin</option>
-              <option value="Yin">Yin</option>
-            <option value="Yu Zhong">Yu Zhong</option>
-              <option value="Yve">Yve</option>
-              <option value="Zhask">Zhask</option>
-              <option value="Zilong">Zilong</option>
-                  <option disabled value="?">?</option>
+      </div>
+            
+          </ul>
+      
+            </div>
         
-            </select>
-          </div>
-          <div class="col">
-        <label class="text-white mb-1" for="idMatch">Total Pertandingan Hero </label>
-        <input type="number" placeholder="Contoh: 100" autofocus autocomplete="off" id="tMatch" class="form-control" />  </div>
-        </div>
-        <br/>
-        <div class="mb-3">
-        <label class="text-white mb-1" for="tWr">Total Win Rate hero </label>
-        <input type="number" placeholder="Contoh: 55.8" step="any" autocomplete="off" id="tWr" class="form-control" />
-        </div>
-        
-        <div class="mb-3">
-        <label class="text-white mb-1" for="wrReq">Win Rate hero yang kamu mau</label>
-        <input type="number" placeholder="Contoh: 80" step="any" autocomplete="off" id="wrReq" class="form-control" />
-        </div>
-        
-        <button class="btn btn-primary d-block w-100" type="button" id="hasil">Hasil</button>
-        <br/>
-        <br/>
-        </form>
-        <span id="resultText" class="text-center d-block"> </span>
+        </div>  </div>  </div>
         <script>
                 // Variables
                 const tMatch = document.querySelector("#tMatch");
@@ -207,7 +111,7 @@
                 function res() {
                     const resultNum = rumus(tMatch.value, tWr.value, wrReq.value);
                     const text =
-                        `<div class="alert alert-primary" role="alert">
+                        `<div class="text-white" role="text">
          hero Kamu <span class="badge bg-primary"><b>${hiro.value}</b></span>  <a class='text-red'> Butuh Kemenagan[Win] </a> <span class="badge bg-danger"><b>${resultNum}</b></span>  tanpa adanya kalah, dan harus winstreak untuk mendapatkan Kemenagan winrate <span class="badge bg-danger"><b>${wrReq.value}%</b></span> 
         </div>`;
         
@@ -247,35 +151,7 @@
     </div></div>
         </div>
 </body>
-<div class="modal fade" id="canges_calculate" tabindex="-1" role="dialog" aria-labelledby="judulTengah" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content boxs bg-dark">
-      <div class="modal-header">
-        <h5 class="modal-title text-white" id="judulTengah">V. Canges</h5>
-        <button class='bulet btn btn-success' type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-white">
-       <ul class='text-white' >
-	<div class="bd-example">
- 
 
-  <details open="">
-    <summary>Detail Added </summary>
-    <p>
-      <li>Added Julian Hero</li>
-       <li>Added Joy Hero</li>
-
-  </p>
-  </details>
-</div>
-      
-    </ul>
-
-      </div>
-	
-  </div>
 <audio id="player" src="/sound/mllbthemeall.mp3"></audio> 
 <script>
   function toggleSound() {
